@@ -1,38 +1,49 @@
-BlogSee
-Project Setup Guide
-1. Installation of XAMPP
+﻿# BlogSee
+# Project Setup Guide
+
+## 1. Installation of XAMPP
+
 To run this project, you need to install XAMPP. Follow the steps below:
 
-Windows:
+- **Windows:**
+  - Download XAMPP from (https://www.apachefriends.org/index.html).
+  - Run the installer and follow the installation instructions.
+  - Once installed, launch XAMPP Control Panel.
 
-Download XAMPP from (https://www.apachefriends.org/index.html).
-Run the installer and follow the installation instructions.
-Once installed, launch XAMPP Control Panel.
-macOS:
+- **macOS:**
+  - Download XAMPP from (https://www.apachefriends.org/index.html).
+  - Open the downloaded .dmg file and drag the XAMPP folder to your Applications directory.
+  - Launch XAMPP from the Applications folder.
+- **Linux:**
+  - Download XAMPP from [here](https://www.apachefriends.org/index.html).
+  - Open your terminal and navigate to the directory where the downloaded file is located.
+  - Give execute permissions to the downloaded installer using the command:
+    ```
+    chmod +x [xampp-installer-filename].run
+    ```
+  - Run the installer with the command:
+    ```
+    sudo ./[xampp-installer-filename].run
+    ```
+  - Follow the installation instructions provided by the installer.
 
-Download XAMPP from (https://www.apachefriends.org/index.html).
-Open the downloaded .dmg file and drag the XAMPP folder to your Applications directory.
-Launch XAMPP from the Applications folder.
-Linux:
 
-Download XAMPP from here.
-Open your terminal and navigate to the directory where the downloaded file is located.
-Give execute permissions to the downloaded installer using the command:
-chmod +x [xampp-installer-filename].run
-Run the installer with the command:
-sudo ./[xampp-installer-filename].run
-Follow the installation instructions provided by the installer.
-2. Starting XAMPP
+## 2. Starting XAMPP
+
 Follow these steps to start XAMPP:
 
-Open XAMPP Control Panel.
-Start the Apache and MySQL modules by clicking on the "Start" button next to them.
-Once both modules are running, you can proceed with the next steps.
-3. Database Setup
+1. Open XAMPP Control Panel.
+2. Start the Apache and MySQL modules by clicking on the "Start" button next to them.
+3. Once both modules are running, you can proceed with the next steps.
+
+## 3. Database Setup
+
 After starting XAMPP, navigate to http://localhost/phpmyadmin/ in your web browser.
 
-Create a new database named test.
-In the SQL tab of the newly created test database, execute the following MySQL commands:
+1. Create a new database named `test`.
+2. In the SQL tab of the newly created `test` database, execute the following MySQL commands:
+
+```sql
 -- Sample SQL commands to run in the `test` database
 -- phpMyAdmin SQL Dump
 -- version 5.2.0
